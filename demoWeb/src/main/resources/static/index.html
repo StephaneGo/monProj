@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<title>Page d’accueil</title>
+</head>
+<body>
+	<a href="http://localhost:8080/dire?prenomXXX=Jeanne">Dire bonjour en GET</a>
+	<br>
+	<br>
+	<a href="http://localhost:8080/dire/hello">Hello world !</a>
+	<br>
+	<br>
+	<a href="http://localhost:8080/dire/buenos-dias">Buenos dias ! (EN
+		GET)</a>
+	<br>
+	<br>
+
+	<form action="http://localhost:8080/dire/buenos-dias" method="post">
+		Prenom : <input type="text" name="prenom" id="" /><br />
+		Age : <input type="number" name="age" id="" /><br />
+		<button>Buenos dias ! (EN POST)</button>
+	</form>
+	
+	<h2>Path variable</h2>
+	<a href="/dire/hello/12/Jeanne">Dire hello</a>
+</body>
+</html>
